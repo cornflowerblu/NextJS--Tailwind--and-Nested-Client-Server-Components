@@ -26,11 +26,11 @@ const NavBar = () => {
       <Logo />
       <ul className="p-2.5 justify-start items-center gap-6 flex">
         <NavBarItem navItems={navItems} />
-        <li className="text-center text-[#7b8db0] text-base font-normal font-['Nunito Sans']">
+        <li className="text-center text-[#7b8db0] hover:text-[#605dec] transition text-base font-normal font-['Nunito Sans']">
           <Link href="/">Sign in</Link>
         </li>
         <Link href="/">
-          <li className="px-5 py-2 bg-[#605dec] rounded justify-start items-center gap-2 flex">
+          <li className="px-5 py-2 bg-[#605dec] hover:bg-[#605dec]/80 transition rounded justify-start items-center gap-2 flex">
             <span className="text-neutral-50 text-base font-normal font-['Nunito Sans']">
               Sign up
             </span>
