@@ -3,7 +3,7 @@ import Logo from "./logo";
 
 const NavBar = () => {
   return (
-    <main className="h-20 p-4 w-full lg:w-[1440px] justify-evenly items-center gap-4 inline-flex">
+    <main className="h-20 p-4 w-full xl:w-[1440px] justify-between items-center gap-4 inline-flex">
       <Logo />
       <ul className="p-2.5 justify-start items-center gap-6 flex">
         <li className="text-center text-[#605dec] text-base font-normal font-['Nunito Sans']">
