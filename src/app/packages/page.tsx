@@ -1,3 +1,7 @@
 export default function Packages() {
-  return <main className="-mt-80">Packages Page</main>;
+  return (
+    <main className="flex flex-col min-h-screen w-full justify-center items-center -my-40">
+      Packages Page
+    </main>
+  );
 }

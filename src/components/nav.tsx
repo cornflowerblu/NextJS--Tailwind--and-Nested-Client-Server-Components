@@ -26,7 +26,7 @@ const NavBar = () => {
       <Logo />
       <ul className="p-2.5 justify-start items-center gap-6 flex">
         <NavBarItem navItems={navItems} />
-        <li className="text-center text-[#7b8db0] hover:text-[#605dec] transition text-base font-normal font-['Nunito Sans']">
+        <li className="text-center text-[#7b8db0] hover:text-[#605dec] hover:underline transition text-base font-normal font-['Nunito Sans']">
           <Link href="/">Sign in</Link>
         </li>
         <Link href="/">
