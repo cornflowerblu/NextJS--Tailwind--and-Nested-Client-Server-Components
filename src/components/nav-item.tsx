@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export type NavItem = {
   id: number;
@@ -15,6 +16,14 @@ type NavItemProps = {
 
 const NavBarItem: React.FC<NavItemProps> = ({ navItems }) => {
   const [selectedItemId, setSelectedItemId] = useState(0);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // Reset selection if the current route is the homepage
+    if (pathname === "/") {
+      setSelectedItemId(0);
+    }
+  }, [pathname]);
 
   const handleSelection = (id: number) => {
     setSelectedItemId(id);
