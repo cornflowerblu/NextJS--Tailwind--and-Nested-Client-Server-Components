@@ -34,7 +34,7 @@ const NavBarItem: React.FC<NavItemProps> = ({ navItems }) => {
       {navItems.map((item) => (
         <li
           key={item.id}
-          className={`cursor-pointer text-center text-base font-normal font-['Nunito Sans'] ${
+          className={`cursor-pointer hover:text-[#605dec] transition text-center text-base font-normal font-['Nunito Sans'] ${
             selectedItemId === item.id ? "text-[#605dec]" : "text-[#7b8db0]"
           }`}
           onClick={() => handleSelection(item.id)}

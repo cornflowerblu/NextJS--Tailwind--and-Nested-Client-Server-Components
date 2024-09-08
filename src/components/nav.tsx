@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
 
 const NavBar = () => {
   return (
-    <main className="h-20 px-6 py-4 w-full xl:w-[1440px] justify-between items-center gap-4 inline-flex">
+    <section className="h-20 px-6 py-4 w-full xl:w-[1440px] justify-between items-center gap-4 inline-flex">
       <Logo />
       <ul className="p-2.5 justify-start items-center gap-6 flex">
         <NavBarItem navItems={navItems} />
@@ -37,7 +37,7 @@ const NavBar = () => {
           </li>
         </Link>
       </ul>
-    </main>
+    </section>
   );
 };
 
